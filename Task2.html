@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./page1.css">
+    <script defer src="page1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1> User Registration Form</h1>
+            <div class="input-control">
+                <label for="username">Name</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="mobile">Mobile</label>
+                <input id="mobile" name="mobile" type="number">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="language" id="language">Languages</label>
+                <div class="language">
+                <div class="language_sub">
+                    <div>
+                        <input name="language" type="checkbox" value="Tamil">
+                    </div>
+                    <div>
+                        <label>Tamil</label>
+                    </div>
+                    
+                </div>
+                <div class="language_sub">
+                    <div>
+                        <input name="language" type="checkbox" value="English">
+                    </div>
+                    <div>
+                        <label>English</label>
+                    </div>
+                
+                </div>
+                <div class="language_sub">
+                    <div><input name="language" type="checkbox" value="Telungu"></div>
+                    
+                    <div>
+                        <label>Telugu</label>
+                    </div>
+                </div>
+                <div class="language_sub">
+                    <div><input name="language" type="checkbox" value="Hindi"></div>
+                    <div><label>Hindi</label></div>
+                    
+                </div>
+                </div>             
+                <div id="languageerror"></div>
+            </div>
+            <div class="input-control">
+                <label for="gender">Gender</label>
+                <div class="gender">
+                <div class="gendersub">
+                    <div>
+                        <input id="genderid" name="gender" type="radio" value="Male">
+                    </div>
+                    <div>
+                        <label>Male</label>
+                    </div>
+                </div>
+                <div class="gendersub">
+                    <div>
+                        <input id="genderid" name="gender" type="radio" value="Female">
+                    </div>
+                    <div>
+                        <label>Female</label>
+                    </div>
+                </div>
+                <div class="gendersub">
+                    <div>
+                        <input id="genderid" name="gender" type="radio" value="Others">
+                    </div>
+                    <div>
+                        <label>Others</label>
+                    </div>
+                </div>
+            </div>
+                <div id="gendererror"></div>
+            </div>
+            <div class="input-control">
+                <label >Country</label>
+                <select id="select">
+                    <option value=''>Select</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Russia">Russia</option>
+                    <option value="England">England</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="China">China</option>
+                    <option value="Jappan">Jappan</option>
+                </select>
+             
+                <div class="error"></div>
+            </div>
+         
+            <a href="#table">
+            <button type="submit">Sign Up</button></a>
+            </a>
+     
+        </form>
+    </div>
+    <br>
+    <br>
+    <div id="tablediv">
+    <table id="table">
+        <thead>
+            <tr>
+                <th id="nameHead"></th>
+                <th id="emailHead"></th>
+                <th id="mobilehead"></th>
+                <th id="languagehead"></th>
+                <th id="genderhead"></th>
+                <th id="CountryHead"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td id="nameId"></td>
+              <td id="emailId"></td>
+              <td id="mobileId"></td>
+              <td id="languageId"></td>
+              <td id="genderId"></td>
+              <td id="countryId"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
+</body>
+
+</html>
