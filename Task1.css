@@ -1,0 +1,100 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3vw;
+    background: rgba(0, 0, 0, 0.808);
+    color: #ffff;
+}
+.overAll{
+    margin-left: 10px;
+
+}
+.navBarSub1{
+    display: flex;
+  
+    gap:10px;
+    margin: 10px;
+    padding: 4px;
+}
+.navBarSub2{
+    display: flex;
+   
+}
+.navBarSub2>div>input{
+    border: none;
+    background: #fff;
+    border-radius: 2px;
+    margin: 10px;
+    padding: 4px;
+    width: 10vw;
+}
+.navBarSub2>div>button{
+    border: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 4px;
+}
+.content_Head{
+    background: #f5f5f5;
+    border-radius: 5px;
+    border: 1px;
+    padding: 5vw;
+    
+}
+.content_Head>button{
+    background: blue;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: #ffff;
+    cursor: pointer;
+}
+.content_body{
+    display: flex;
+    gap: 2vw;
+    background: #fff;
+}
+.content_body>div>div>button{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1vh;
+    border: none;
+}
+.body{
+    padding: 3vw;
+}
+
+@media (max-width: 500px )  {
+
+    .content_body{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    background: #fff;
+    }
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navBarSub2{
+        display: flex;
+    }
+    .navBarSub2>div>input{
+        border: none;
+        background: #fff;
+        border-radius: 2px;
+        margin: 5px;
+        width: 20vw;
+    }
+    .navBarSub2>div>button{
+        border: none;
+        background: #f5f5f5;
+        border-radius: 5px;
+        margin: 5px;
+       
+    }
+}
+  
